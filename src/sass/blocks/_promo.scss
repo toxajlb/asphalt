@@ -1,7 +1,8 @@
 .promo {
-    min-height: 650px;
+    min-height: 100vh;
+    position: relative;
     padding: 21px 0 93px 0;
-    background: url("../img/main.jpg") center (center/cover) no-repeat;
+    background: url("../img/main.jpg") no-repeat 50%/cover;
     &__wrapper {
         display: flex;
         flex-direction: column;
