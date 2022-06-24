@@ -15,10 +15,11 @@
     span.long {
         width: 36px;
     }
-    &_animated {
+    span.animated {
         animation: change 1.5s ease infinite;
         &:hover {
             animation-play-state: paused;
         }
     }
+    
 }
