@@ -9,3 +9,16 @@
         transform: scale(1);
     }
 }
+
+@keyframes change {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+        color: yellow;
+    }
+    to {
+        transform: scale(1);
+    }
+}

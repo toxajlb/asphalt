@@ -10,7 +10,7 @@
 }
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 21px auto 0 auto;
 }
 @import 'blocks/promo';
 @import 'blocks/header.scss';
@@ -25,3 +25,4 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
+@import 'blocks/menu';
