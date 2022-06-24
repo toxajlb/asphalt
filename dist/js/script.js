@@ -87,7 +87,7 @@ $(document).ready(function(){
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "toxajlb@yandex.ru",
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
