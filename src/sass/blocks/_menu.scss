@@ -6,6 +6,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+    &:hover {
+        span.animated {
+            animation-play-state: paused;
+        }
+    }
     span {
         display: block;
         width: 30px;
@@ -16,10 +22,37 @@
         width: 36px;
     }
     span.animated {
-        animation: change 1.5s ease infinite;
-        &:hover {
-            animation-play-state: paused;
-        }
+        animation: change 2s ease infinite;
+    } 
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    // left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    // visibility: hidden;
+    // opacity: 0;
+    transition: all .6s;
+    &__block {
+        position: relative;
+        // left: -100%;
+        width: 345px;
+        height: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        transition: all .6s;
+        background-color: $main-color;
     }
-    
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__list {
+        list-style-type: none;
+    }
 }
