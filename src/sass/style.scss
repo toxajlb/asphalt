@@ -12,6 +12,10 @@
     max-width: 1200px;
     margin: 21px auto 0 auto;
 }
+.divider {
+    height: 3px;
+    background-color: $main-color;
+}
 @import 'blocks/promo';
 @import 'blocks/header.scss';
 @import 'blocks/buttons';
