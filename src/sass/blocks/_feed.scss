@@ -1,5 +1,6 @@
 .feed {
-    padding-bottom: 71px;
+    padding: 5px 0 71px 0;
+    background: url("../../img/feedback.png") no-repeat 50%/cover;
     &__item {
         display: flex;
         margin-top: 100px;
@@ -19,11 +20,6 @@
         color: #0d0d0d;
         font-size: 18px;
         font-weight: 700;
-    }
-    &__count {
-        color: #646464;
-        font-size: 14px;
-        font-weight: 500;
     }
     &__descr {
         color: #0d0d0d;

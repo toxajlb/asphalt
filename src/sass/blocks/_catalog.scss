@@ -13,16 +13,14 @@
         width: 220px;
         height: 50px;
         border: 2px solid #d0d0d0;
-        color: #6b6b6b;
-        font-size: 18px;
-        font-weight: 400;
-        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
         text-align: center;
-        line-height: 48px;
         transform: skewX(-25deg);
         margin: 0 5px;
         cursor: pointer;
-        transition: 0.5s all;
+        transition: .5s all;
         &:hover {
             box-shadow: 3px 3px 20px $main-color;
             border: none;
@@ -87,8 +85,7 @@
         }
         hr {
             background-color: #e8e8e8;
-            margin-top: 19px;
-            margin-bottom: 21px;
+            margin: 19px 0 21px 0;
             border-bottom: none;
         }
         &__footer {
@@ -124,12 +121,10 @@
         &__list {
             position: relative;
             width: 50%;
-            margin-left: 20px;
+            margin: 0 0 0 20px;
+            padding: 0 20px 0 19px;
             transform: translateX(0%);
-            padding-right: 20px;
             transition: 0.5s all;
-            padding-left: 19px;
-            margin-bottom: 0;
             list-style-type: none;
             &_active {
                 transform: translateX(-100%);
