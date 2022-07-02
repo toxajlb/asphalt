@@ -153,18 +153,19 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     
     // Calculating
-
-    
-
-    
-    
-    
     
     
     function calc() {
-        const result = document.querySelector('.calculating__result span');
+        const result = document.querySelector('.calculating-result__output');
     
-        let sex, ratio, height, weight, age;
+        let small = document.querySelector('#small'),
+            large = document.querySelector('#large'),
+            crushedStone = document.querySelector('#crushed-stone'),
+            sand = document.querySelector('#sand'),
+            square = document.querySelector('#square'),
+            totalInput = document.querySelector('.calculating-choose__input');
+        
+        
     
         if (localStorage.getItem('sex')) {
             sex = localStorage.getItem('sex');
@@ -278,7 +279,7 @@ window.addEventListener('DOMContentLoaded', () => {
         getDynamicInformation('#age');
     }
 
-    calc();
+    calc(); 
 });
 
 
