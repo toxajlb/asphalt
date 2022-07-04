@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', () => {
             sand = document.querySelector('#sand'),
             square = document.querySelector('#square'),
             btn = document.querySelector('#btn'),
-            oneSquare = 550; 
+            oneSquare = 550;    
         
 
         function getDynamicInformation(selector) {
@@ -174,9 +174,9 @@ window.addEventListener('DOMContentLoaded', () => {
             input.addEventListener('input', () => {
     
                 if (input.value.match(/\D/g)) {
-                    input.style.border = '1px solid red';
-                    input.value = 'некорректные данные';
+                    input.value = '';
                 }
+                
                 else {
                     input.style.border = 'none';
                 }
@@ -189,13 +189,13 @@ window.addEventListener('DOMContentLoaded', () => {
                         large = +input.value;
                         break;
                     case 'crushed-stone':
-                        crushedStone == +input.value;
+                        crushedStone = +input.value;
                         break;
                     case 'sand':
-                        sand == +input.value;
+                        sand = +input.value;
                         break;
                     case 'square':
-                        square == +input.value;
+                        square = +input.value;
                         break;
                 }
             }); 
@@ -209,13 +209,15 @@ window.addEventListener('DOMContentLoaded', () => {
         getDynamicInformation('#square');
 
         btn.addEventListener('click', () => {
-            
-
-           let sum = (small * oneSquare) + (large * oneSquare);
-           result.innerHTML = sum;
+               
+            if (small.value != '' && large.value != '') {
+                let sum = (small * oneSquare) + (large * oneSquare);
+                result.textContent = `Итого: ${sum}₽`
+            }   
+            else {
+                alert('Введите вес и объем груза')
+            }   
         });
-    
-        
     }
 
     calc(); 

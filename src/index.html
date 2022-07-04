@@ -746,47 +746,44 @@
     <section class="calculating">
         <div class="container">
             <h2 class="title">
-                Рассчитаем вашу потребность в калориях?
+                Расчет стоимости
             </h2>
             <div class="calculating-field">
 
                 <div class="calculating-choose">
-                    <div class="calculating-choose__subtitle">Мелкозернистый асфальт (см)</div>
-                    <input type="text" class="calculating-choose__input" id="small" placeholder="0"/>
+                    <div class="calculating-block-first">
+                        <div class="calculating-block-first__subtitle">Мелкозернистый асфальт (см)</div>
+                        <input type="text" id="small" placeholder="0"/>
+                    </div>
+
+                    <div class="calculating-block-second">
+                        <div class="calculating-block-second__subtitle">Крупнозернистый асфальт (см)</div>
+                        <input type="text" id="large" placeholder="0"/>
+                    </div>
+
+                    <div class="calculating-block-third">
+                        <div class="calculating-block-third__subtitle">Слой щебня (см)</div>
+                        <input type="text" id="crushed-stone" placeholder="0"/>
+                    </div>
     
-                    <div class="calculating-choose__subtitle">Крупнозернистый асфальт (см)</div>
-                    <input type="text" class="calculating-choose__input" id="large" placeholder="0"/>
+                    <div class="calculating-block-fourth">
+                        <div class="calculating-block-fourth__subtitle">Слой песка (см)</div>
+                        <input type="text" id="sand" placeholder="0"/>
+                    </div>
     
-                    <div class="calculating-choose__subtitle">Слой щебня (см)</div>
-                    <input type="text" class="calculating-choose__input" id="crushed-stone" placeholder="0"/>
-    
-                    <div class="calculating-choose__subtitle">Слой песка (см)</div>
-                    <input type="text" class="calculating-choose__input" id="sand" placeholder="0"/>
-    
-                    <div class="calculating-choose__subtitle">Площадь (кв.м)</div>
-                    <input type="text" class="calculating-choose__input" id="square" placeholder="0"/>
+                    <div class="calculating-block-fifth">
+                        <div class="calculating-block-fifth__subtitle">Площадь (кв.м)</div>
+                        <input type="text" id="square" placeholder="0"/>
+                    </div>
+             
                 </div>
                 
                 <div class="calculating-result">
-                    <div class="calculating-result__output"><span id="out">0.0</span><span class="rub">₽</span></div>
+                    <div class="calculating-result__output"><span>Итого: </span><span id="out">0₽</span></div>
                     <div class="calculating-result__button-choose">
-                        <input type="button" id="btn" value="Считать"/>
+                        <input type="button" id="btn" value="Расчитать"/>
                     </div>
                 </div>
-
-
-                <div class="calculating__divider"></div>
-
-                <div class="calculating__total">
-                    <div class="calculating__subtitle">
-                        Ваша суточная норма калорий:
-                    </div>
-                    <div class="calculating__result">
-                        <span>0</span> ккал
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <div class="divider"></div>
