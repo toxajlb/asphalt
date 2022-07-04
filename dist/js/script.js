@@ -156,7 +156,6 @@ window.addEventListener('DOMContentLoaded', () => {
     
     
     function calc() {
-        const result = document.querySelector('.calculating-result__output');
     
         let small = document.querySelector('#small'),
             large = document.querySelector('#large'),
@@ -164,6 +163,7 @@ window.addEventListener('DOMContentLoaded', () => {
             sand = document.querySelector('#sand'),
             square = document.querySelector('#square'),
             btn = document.querySelector('#btn'),
+            result = document.querySelector('#out'),
             oneSquare = 550;    
         
 
@@ -212,7 +212,7 @@ window.addEventListener('DOMContentLoaded', () => {
                
             if (small.value != '' && large.value != '') {
                 let sum = (small * oneSquare) + (large * oneSquare);
-                result.textContent = `Итого: ${sum}₽`
+                result.textContent = `${sum}₽`
             }   
             else {
                 alert('Введите вес и объем груза')
