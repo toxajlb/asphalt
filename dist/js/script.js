@@ -150,7 +150,57 @@ window.addEventListener('DOMContentLoaded', () => {
 
     closeElem.addEventListener('click', () => {
         menu.classList.remove('active');
-    })   
+    })
+    
+    // Calculating
+    
+    
+    function calc() {
+        const result = document.querySelector('.calculating-result__output');
+    
+        let small = document.querySelector('#small'),
+            large = document.querySelector('#large'),
+            crushedStone = document.querySelector('#crushed-stone'),
+            sand = document.querySelector('#sand'),
+            square = document.querySelector('#square'),
+            totalInput = document.querySelector('.calculating-choose__input');
+        
+
+        function getDynamicInformation(selector) {
+            const input = document.querySelector(selector);
+    
+    
+            input.addEventListener('input', () => {
+    
+                if (input.value.match(/\D/g)) {
+                    input.style.border = '1px solid red';
+                }
+                else {
+                    input.style.border = 'none';
+                }
+    
+                switch(input.getAttribute('id')) {
+                    case 'height':
+                        small = +input.value;
+                        break;
+                    case 'weight':
+                        weight = +input.value;
+                        break;
+                    case 'age':
+                        age = +input.value;
+                        break;
+                }
+    
+                calcTotal();
+            }); 
+        }
+    
+        getDynamicInformation('#height');
+        getDynamicInformation('#weight');
+        getDynamicInformation('#age');
+    }
+
+    calc(); 
 });
 
 
