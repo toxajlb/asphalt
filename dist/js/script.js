@@ -163,7 +163,8 @@ window.addEventListener('DOMContentLoaded', () => {
             crushedStone = document.querySelector('#crushed-stone'),
             sand = document.querySelector('#sand'),
             square = document.querySelector('#square'),
-            totalInput = document.querySelector('.calculating-choose__input');
+            btn = document.querySelector('#btn'),
+            oneSquare = 550; 
         
 
         function getDynamicInformation(selector) {
@@ -174,30 +175,47 @@ window.addEventListener('DOMContentLoaded', () => {
     
                 if (input.value.match(/\D/g)) {
                     input.style.border = '1px solid red';
+                    input.value = 'некорректные данные';
                 }
                 else {
                     input.style.border = 'none';
                 }
     
                 switch(input.getAttribute('id')) {
-                    case 'height':
+                    case 'small':
                         small = +input.value;
                         break;
-                    case 'weight':
-                        weight = +input.value;
+                    case 'large':
+                        large = +input.value;
                         break;
-                    case 'age':
-                        age = +input.value;
+                    case 'crushed-stone':
+                        crushedStone == +input.value;
+                        break;
+                    case 'sand':
+                        sand == +input.value;
+                        break;
+                    case 'square':
+                        square == +input.value;
                         break;
                 }
-    
-                calcTotal();
             }); 
+            
         }
+
+        getDynamicInformation('#small');
+        getDynamicInformation('#large');
+        getDynamicInformation('#crushed-stone');
+        getDynamicInformation('#sand');
+        getDynamicInformation('#square');
+
+        btn.addEventListener('click', () => {
+            
+
+           let sum = (small * oneSquare) + (large * oneSquare);
+           result.innerHTML = sum;
+        });
     
-        getDynamicInformation('#height');
-        getDynamicInformation('#weight');
-        getDynamicInformation('#age');
+        
     }
 
     calc(); 
