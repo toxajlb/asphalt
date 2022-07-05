@@ -18,11 +18,10 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">Про меня</a></li>
-                    <li class="menu__link"><a href="#">Мой опыт</a></li>
-                    <li class="menu__link"><a href="#">Про меня</a></li>
-                    <li class="menu__link"><a href="#">Мой опыт</a></li>
-                    <li class="menu__link"><a href="#">Про меня</a></li>
+                    <li class="menu__link"><a href="#">О нас</a></li>
+                    <li class="menu__link"><a href="#completed">Наши работы</a></li>
+                    <li class="menu__link"><a href="#prices">Услуги и цены</a></li>
+                    <li class="menu__link"><a href="#calc">Онлайн-калькулятор</a></li>
                     <li class="menu__link"><a href="#">Контакты</a></li>
                 </ul>
             </nav>
@@ -85,7 +84,7 @@
                 <button data-modal="consultation" class="button button_main">заказать консультацию</button>
                 <div class="promo__link">
                     или
-                    <a href="#">ПОСМОТРЕТЬ ПЕРЕЧЕНЬ ДОСТУПНЫХ УСЛУГ</a>
+                    <a href="#prices">ПОСМОТРЕТЬ ПЕРЕЧЕНЬ ДОСТУПНЫХ УСЛУГ</a>
                 </div>
             </div>
             
@@ -163,7 +162,7 @@
 
     <div class="carousel">
         <div class="container">
-            <h2 class="title">Выполненные работы</h2>
+            <h2 class="title" id="completed">Выполненные работы</h2>
             <div class="carousel__inner">
                 <div>
                     <img src="img/slide_1.jpg" alt="slide">
@@ -189,7 +188,7 @@
 
     <section class="catalog">
         <div class="container">
-            <h2 class="title">Наши услуги</h2>
+            <h2 class="title" id="prices">Наши услуги</h2>
             <ul class="catalog__tabs">
                 <li class="catalog__tab catalog__tab_active"><div>Асфальтирование</div></li>
                 <li class="catalog__tab"><div>Строительство и ремонт дорог</div></li>
@@ -745,7 +744,7 @@
 
     <section class="calculating">
         <div class="container">
-            <h2 class="title">
+            <h2 class="title" id="calc">
                 Расчет стоимости
             </h2>
             <div class="calculating-field">
@@ -775,15 +774,15 @@
                         <div class="calculating-block-fifth__subtitle">Площадь (кв.м)</div>
                         <input type="text" id="square" placeholder="0"/>
                     </div>
-             
-                </div>
-                
-                <div class="calculating-result">
-                    <div class="calculating-result__output"><span>Итого: </span><span id="out">0₽</span></div>
-                    <div class="calculating-result__button-choose">
-                        <input type="button" id="btn" value="Расчитать"/>
+
+                    <div class="calculating-result">
+                        <button class="button" id="btn">Рассчитать</button>
+            
+                        <div class="calculating-result__output"><span>Итого: </span><span id="out">0 ₽</span></div>
                     </div>
                 </div>
+                
+                
     </section>
 
     <div class="divider"></div>

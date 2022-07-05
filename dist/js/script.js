@@ -15,20 +15,6 @@ $(document).ready(function(){
                     dots: true,
                     arrows: false
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 540,
-                settings: {
-                    dots: true,
-                    arrows: false
-                }
             }
         ]
     });
@@ -103,9 +89,14 @@ $(document).ready(function(){
 
     $('form').submit(function(e) {
         e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
         $.ajax({
             type: "POST",
-            url: "toxajlb@yandex.ru",
+            url: "mailer/smart.php",
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
@@ -164,22 +155,16 @@ window.addEventListener('DOMContentLoaded', () => {
             square = document.querySelector('#square'),
             btn = document.querySelector('#btn'),
             result = document.querySelector('#out'),
-            oneSquare = 550;    
-        
+            oneSquare = 550; 
 
         function getDynamicInformation(selector) {
             const input = document.querySelector(selector);
     
-    
             input.addEventListener('input', () => {
     
-                if (input.value.match(/\D/g)) {
-                    input.value = '';
-                }
-                
-                else {
-                    input.style.border = 'none';
-                }
+                if (input.value.match(/\D/g)) input.value = '';
+          
+                else input.style.border = 'none';
     
                 switch(input.getAttribute('id')) {
                     case 'small':
@@ -198,8 +183,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         square = +input.value;
                         break;
                 }
-            }); 
-            
+            });      
         }
 
         getDynamicInformation('#small');
@@ -208,18 +192,17 @@ window.addEventListener('DOMContentLoaded', () => {
         getDynamicInformation('#sand');
         getDynamicInformation('#square');
 
-        btn.addEventListener('click', () => {
-               
-            if (small.value != '' && large.value != '') {
-                let sum = (small * oneSquare) + (large * oneSquare);
-                result.textContent = `${sum}₽`
+        btn.addEventListener('click', () => {           
+            if (small.value != '' && large.value != '' && crushedStone.value != '' && 
+            sand.value != '' && square.value != '') {
+                let totalSquare = square * oneSquare;
+                let sum = (small * totalSquare) + (large * totalSquare) + 
+                (crushedStone * totalSquare) + (sand * totalSquare);
+                result.textContent = `${sum} ₽`;
             }   
-            else {
-                alert('Введите вес и объем груза')
-            }   
+            else alert('Введите числовые данные');     
         });
     }
-
     calc(); 
 });
 
