@@ -20,4 +20,16 @@
     &_mt25 {
         margin-top: 25px;
     }
+    &__policy {
+        display: flex;
+        margin-top: 20px;
+        color: #000;
+        input {
+            margin-right: 20px;
+        }
+        #check-error {
+            position: absolute;
+            margin-top: 60px;
+        }
+    }
 }

@@ -54,7 +54,7 @@ $(document).ready(function(){
         })
     });
 
-    function validateForms(form){
+    /* function validateForms(form){
         $(form).validate({
             rules: {
                 name: {
@@ -65,7 +65,8 @@ $(document).ready(function(){
                 email: {
                     required: true,
                     email: true
-                }
+                },
+                check: "required"
             },
             messages: {
                 name: {
@@ -76,14 +77,15 @@ $(document).ready(function(){
                 email: {
                   required: "Пожалуйста, введите свою почту",
                   email: "Неправильно введен адрес почты"
-                }
+                },
+                check: "Кликните флажок чтобы продолжить!"
             }
         });
     };
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
-    validateForms('#order form');
+    validateForms('#order form'); */
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
