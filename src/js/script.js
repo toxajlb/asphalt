@@ -206,4 +206,3 @@ window.addEventListener('DOMContentLoaded', () => {
     calc(); 
 });
 
-

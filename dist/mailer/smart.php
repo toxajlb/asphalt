@@ -1,25 +1,31 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require_once('phpmailer/PHPMailer.php');
+require_once('phpmailer/SMTP.php');
+require_once('phpmailer/Exception.php');
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 
-require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-// $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->SMTPDebug = 1;                               // Enable verbose debug output
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'toxajlb@yandex.ru';                 // Наш логин
-$mail->Password = 'qsbrlzmrrzyurtjt';                           // Наш пароль от ящика
+$mail->Username = 'mirasfaltirovaniya@yandex.ru';                 // Наш логин
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('toxajlb@yandex.ru', 'Asphalt');   // От кого письмо 
-$mail->addAddress('gfail.fuuu@gmail.com');     // Add a recipient
+$mail->setFrom('mirasfaltirovaniya@yandex.ru', 'ООО Идеал Асфальт');   // От кого письмо 
+$mail->addAddress('mirasfaltirovaniya@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -28,17 +34,16 @@ $mail->addAddress('gfail.fuuu@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Данные пользователя для заказа';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+		Пользователь оставил данные: <br> 
 	Имя: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
 	E-mail: ' . $email . '';
 
-if(!$mail->send()) {
-    return false;
-} else {
-    return true;
-}
-
+if ($mail->send()) {
+	echo 'Письмо отправлено!';
+	} else {
+	echo 'Ошибка: ' . $mail->ErrorInfo;
+	}
 ?>
