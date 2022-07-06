@@ -54,7 +54,7 @@ $(document).ready(function(){
         })
     });
 
-    /* function validateForms(form){
+    function validateForms(form){
         $(form).validate({
             rules: {
                 name: {
@@ -71,7 +71,7 @@ $(document).ready(function(){
             messages: {
                 name: {
                     required: "Пожалуйста, введите свое имя",
-                    minlength: jQuery.validator.format("Введите {0} символа!")
+                    minlength: jQuery.validator.format("Введите минимум {0} символа!")
                   },
                 phone: "Пожалуйста, введите свой номер телефона",
                 email: {
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
     validateForms('#consultation-form');
     validateForms('#consultation form');
-    validateForms('#order form'); */
+    validateForms('#order form'); 
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
