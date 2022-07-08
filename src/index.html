@@ -18,7 +18,7 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">О нас</a></li>
+                    <li class="menu__link"><a href="#" rel="author">О нас</a></li>
                     <li class="menu__link"><a href="#completed">Наши работы</a></li>
                     <li class="menu__link"><a href="#prices">Услуги и цены</a></li>
                     <li class="menu__link"><a href="#calc">Онлайн-калькулятор</a></li>
@@ -42,16 +42,16 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section id="up" class="promo">
-        <div class="hamburger">
-            <span class="animated"></span>
-            <span class="animated long"></span>
-            <span class="animated"></span>
-        </div>
+    <section id="up" class="promo">  
         <div class="container">
+            <div class="hamburger">
+                <span class="animated"></span>
+                <span class="animated long"></span>
+                <span class="animated"></span>
+            </div>
             <header class="header"> 
                 <div class="header__official">
-                    <a href="./index.html">ООО "Идеал Асфальт"</a>
+                    <a href="#last" rel="last">ООО "Идеал Асфальт"</a>
                     <span>Экономия времени и денег - это то, что Вы получите от нас</span>
                 </div>
                 <div class="header__contacts">
@@ -156,7 +156,7 @@
                 <button class="button button_submit">заказать консультацию</button>
                 <div class="feed-form__policy">
                     <input name="check" required type="checkbox">
-                    <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                    <span>Я согласен(а) с <a href="privacy.html" rel="license">политикой конфиденциальности</a></span>
                 </div>
             </form>
         </div>
@@ -740,7 +740,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="catalog__price">Ознакомиться с полным перечнем цен</a> 
+            <a href="#" class="catalog__price">Ознакомиться с полным перечнем цен и услуг</a> 
         </div>
     </section>
 
@@ -760,21 +760,26 @@
                     </div>
 
                     <div class="calculating-block-second">
+                        <div class="calculating-block-first__subtitle">Среднезернистый асфальт (см)</div>
+                        <input type="text" id="middle" placeholder="0"/>
+                    </div>
+
+                    <div class="calculating-block-third">
                         <div class="calculating-block-second__subtitle">Крупнозернистый асфальт (см)</div>
                         <input type="text" id="large" placeholder="0"/>
                     </div>
 
-                    <div class="calculating-block-third">
+                    <div class="calculating-block-fourth">
                         <div class="calculating-block-third__subtitle">Слой щебня (см)</div>
                         <input type="text" id="crushed-stone" placeholder="0"/>
                     </div>
     
-                    <div class="calculating-block-fourth">
+                    <div class="calculating-block-fifth">
                         <div class="calculating-block-fourth__subtitle">Слой песка (см)</div>
                         <input type="text" id="sand" placeholder="0"/>
                     </div>
     
-                    <div class="calculating-block-fifth">
+                    <div class="calculating-block-sixth">
                         <div class="calculating-block-fifth__subtitle">Площадь (кв.м)</div>
                         <input type="text" id="square" placeholder="0"/>
                     </div>
@@ -805,7 +810,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="last">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc7e3d4cca4e3e59d9e806de07172c4932aa0974cdc8a8b369f25072622071c2&amp;source=constructor" width="100%" height="630" frameborder="0"></iframe>
 
         <div class="footer__info">
@@ -831,7 +836,7 @@
                 <button class="button button_submit">заказать консультацию</button>
                 <div class="feed-form__policy">
                     <input name="check" required type="checkbox">
-                    <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                    <span>Я согласен(а) с <a href="privacy.html" rel="license">политикой конфиденциальности</a></span>
                 </div>
             </form>
         </div>
@@ -848,7 +853,7 @@
                 <button class="button button_submit">написать</button>
                 <div class="feed-form__policy">
                     <input name="check" required type="checkbox">
-                    <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a></span>
+                    <span>Я согласен(а) с <a href="privacy.html" rel="license">политикой конфиденциальности</a></span>
                 </div>
             </form>
         </div>
@@ -864,7 +869,6 @@
     <a href="#up" class="pageup">
         <img src="icons/up.svg" alt="up">
     </a>
-    
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>

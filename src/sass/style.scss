@@ -17,7 +17,7 @@
     background-color: $main-color;
 }
 @import 'blocks/promo';
-@import 'blocks/header.scss';
+@import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
@@ -31,3 +31,5 @@
 @import 'blocks/footer';
 @import 'blocks/modal';
 @import 'blocks/pageup';
+@import 'blocks/privacy';
+@import 'blocks/media';

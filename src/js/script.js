@@ -151,13 +151,18 @@ window.addEventListener('DOMContentLoaded', () => {
     function calc() {
     
         let small = document.querySelector('#small'),
+            middle = document.querySelector('#middle'),
             large = document.querySelector('#large'),
             crushedStone = document.querySelector('#crushed-stone'),
             sand = document.querySelector('#sand'),
             square = document.querySelector('#square'),
             btn = document.querySelector('#btn'),
             result = document.querySelector('#out'),
-            oneSquare = 550; 
+            oneSquarePerSmall = 110,
+            oneSquarePerMiddle = 112,
+            oneSquarePerLarge = 113,
+            oneSquarePerSand = 13,
+            oneSquarePerCrushedStone = 19;
 
         function getDynamicInformation(selector) {
             const input = document.querySelector(selector);
@@ -171,6 +176,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 switch(input.getAttribute('id')) {
                     case 'small':
                         small = +input.value;
+                        break;
+                    case 'middle':
+                        middle = +input.value;
                         break;
                     case 'large':
                         large = +input.value;
@@ -189,20 +197,26 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         getDynamicInformation('#small');
+        getDynamicInformation('#middle');
         getDynamicInformation('#large');
         getDynamicInformation('#crushed-stone');
         getDynamicInformation('#sand');
         getDynamicInformation('#square');
 
-        btn.addEventListener('click', () => {           
-            if (small.value != '' && large.value != '' && crushedStone.value != '' && 
+        btn.addEventListener('click', () => { 
+            let totalSquareSmall = square * oneSquarePerSmall,
+                totalSquareMiddle = square * oneSquarePerMiddle,
+                totalSquareLarge = square * oneSquarePerLarge,
+                totalSquareSand = square * oneSquarePerSand,
+                totalSquareCrushedStone = square * oneSquarePerCrushedStone; 
+
+            if (small.value != '' && middle.value != '' && large.value != '' && crushedStone.value != '' && 
             sand.value != '' && square.value != '') {
-                let totalSquare = square * oneSquare;
-                let sum = (small * totalSquare) + (large * totalSquare) + 
-                (crushedStone * totalSquare) + (sand * totalSquare);
-                result.textContent = `${sum} ₽`;
+                let sum = (small * totalSquareSmall) + (middle * totalSquareMiddle) + (large * totalSquareLarge) + 
+                (crushedStone * totalSquareCrushedStone) + (sand * totalSquareSand);
+                result.textContent = `${sum} ₽`;      
             }   
-            else alert('Введите числовые данные');     
+            else alert('Введите числовые данные');       
         });
     }
     calc(); 
