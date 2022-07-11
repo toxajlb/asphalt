@@ -158,11 +158,11 @@ window.addEventListener('DOMContentLoaded', () => {
             square = document.querySelector('#square'),
             btn = document.querySelector('#btn'),
             result = document.querySelector('#out'),
-            oneSquarePerSmall = 110,
-            oneSquarePerMiddle = 112,
-            oneSquarePerLarge = 113,
-            oneSquarePerSand = 13,
-            oneSquarePerCrushedStone = 19;
+            oneSquarePerSmall = 108,
+            oneSquarePerMiddle = 110,
+            oneSquarePerLarge = 112,
+            oneSquarePerSand = 7,
+            oneSquarePerCrushedStone = 10;
 
         function getDynamicInformation(selector) {
             const input = document.querySelector(selector);
