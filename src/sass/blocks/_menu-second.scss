@@ -18,7 +18,7 @@
         width: 345px;
         height: 100%;
         z-index: 10;
-        padding-top: 140px;
+        padding-top: 70px;
         padding-left: 40px;
         transition: all .6s;
         background-color: rgba(97, 46, 3, 1);
@@ -33,17 +33,22 @@
         list-style-type: none;
         padding-left: 35px;
     }
-    &__link {
+    &__sublist {
+        display: none;
+        list-style-type: none;
+        padding-left: 35px;
+    }
+    &__link, &__sublink {
         position: relative;
         margin-bottom: 15px;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 16px;
+        line-height: 24px;
         &:before {
             content: '';
             position: absolute;
             left: -35px;
-            top: 10px;
+            top: 5px;
             width: 15px;
             height: 15px;
             border-radius: 100%;

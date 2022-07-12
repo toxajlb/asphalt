@@ -138,7 +138,9 @@ window.addEventListener('DOMContentLoaded', () => {
           menuSecond = document.querySelector('.menu-second'),
           closeElem = document.querySelector('.menu__close'),
           closeElemSecond = document.querySelector('.menu-second__close'),
-          asphalting = document.querySelector('#asphalting');
+          sublist = document.querySelector('.menu-second__sublist'),
+          asphalting = document.querySelector('#asphalting'),
+          secondAsphalting = document.querySelector('#secondAsphalting');
 
     hamburger.addEventListener('click', () => {
         menu.classList.add('active');
@@ -154,6 +156,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
     closeElemSecond.addEventListener('click', () => {
         menuSecond.classList.remove('active');
+    })
+
+    secondAsphalting.addEventListener('mouseover', () => {
+        sublist.style.display = 'block';
+    })
+
+    menuSecond.addEventListener('mouseout', (e) => {
+        sublist.style.display = 'none';
     })
     
     // Calculating
