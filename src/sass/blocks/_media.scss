@@ -8,12 +8,24 @@
     .container {
         max-width: 720px;    
     }
+    .hamburger {
+        position: fixed;
+        cursor: none;
+    }
     .header {
         &__official {
+            a {
+                cursor: none;
+            }
             span {
                 font-size: 16px;
             }
-        }       
+        } 
+        &__contacts {
+            a {
+                cursor: none;
+            }
+        }             
     }
     .promo {
         &__header {
@@ -27,8 +39,21 @@
         cursor: none;
         &:hover {
             background-color: $main-color;
+            cursor: none;
         }
-        
+        &_submit {
+            background-color: $main-color;
+        }   
+    }
+    .menu {
+        &__close {
+            cursor: none;
+        }
+    }
+    .menu-second {
+        &__close {
+            cursor: none;
+        }
     }
 }
 
@@ -36,10 +61,15 @@
     .container {
         max-width: 540px;   
     }
+    .hamburger {
+        position: fixed;
+        cursor: none;
+    }
     .header {
         &__official {
             a {
                 font-size: 16px;
+                cursor: none;
             }
             span {
                 font-size: 14px;
@@ -49,6 +79,7 @@
         &__contacts {
             a {
                 font-size: 16px;
+                cursor: none;
             }
         }       
     }
@@ -68,8 +99,21 @@
         cursor: none;
         &:hover {
             background-color: $main-color;
+            cursor: none;
         }
-        
+        &_submit {
+            background-color: $main-color;
+        }   
+    }
+    .menu {
+        &__close {
+            cursor: none;
+        }
+    }
+    .menu-second {
+        &__close {
+            cursor: none;
+        }
     }
     .modal {
         left: 40%;
@@ -81,11 +125,16 @@
         width: 100%;
         padding: 0 10px;
     }
+    .hamburger {
+        position: fixed;
+        cursor: none;
+    }
     .header {
         &__official {
             margin-right: 15px;
             a {
                 font-size: 12px;
+                cursor: none;
             }
             span {
                 font-size: 10px;
@@ -95,6 +144,7 @@
         &__contacts {
             a {
                 font-size: 10px;
+                cursor: none;
             }
         }       
     }
@@ -103,7 +153,7 @@
             margin-top: 80px;
         }
         &__header {
-            font-size: 14px;
+            font-size: 18px;
         }
         span {
             font-size: 12px;
@@ -124,32 +174,74 @@
     .button {
         width: 100px;
         font-size: 10px; 
-        cursor: none;
         &:hover {
             background-color: $main-color;
+            cursor: none;
         }
         &_main {
             display: none;
+        }
+        &_submit {
+            background-color: $main-color;
         }
     }
     .menu {
         &__block {
             width: 205px;
         }
-        &__link {
-            font-size: 20px;
-        }  
         &__list {
             padding-left: 15px;
+        }  
+        &__link {
+            font-size: 16px;
         }  
         &__social {
             top: 93%;
         }
+        &__close {
+            cursor: none;
+        }
+    }
+    .menu-second {
+        &__block {
+            width: 205px;
+        }
+        &__list {
+            padding-left: 5px;
+        }  
+        &__link {
+            font-size: 14px;
+            line-height: inherit;
+        }  
+        &__social {
+            top: 93%;
+        }
+        &__close {
+            cursor: none;
+        }
     }
     .modal {
-        top: 40%;
-        left: 22%;
-        width: 250px;
-
-    }
+        width: 220px;
+        min-height: 300px;
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__close {
+            top: 0;
+            right: 0;
+            cursor: none;
+        }
+        .feed-form {
+            width: 100%;
+            #name-error.error, #phone-error, #email-error, #check-error {
+                font-size: 0px;
+            }
+            &__policy {
+                font-size: 10px;
+                a {
+                    cursor: none;
+                }
+            }
+        }
+    }    
 }

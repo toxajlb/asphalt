@@ -134,8 +134,11 @@ window.addEventListener('DOMContentLoaded', () => {
     // Hamburger
 
     const hamburger = document.querySelector('.hamburger'),
-        menu = document.querySelector('.menu'),
-        closeElem = document.querySelector('.menu__close');
+          menu = document.querySelector('.menu'),
+          menuSecond = document.querySelector('.menu-second'),
+          closeElem = document.querySelector('.menu__close'),
+          closeElemSecond = document.querySelector('.menu-second__close'),
+          asphalting = document.querySelector('#asphalting');
 
     hamburger.addEventListener('click', () => {
         menu.classList.add('active');
@@ -144,10 +147,17 @@ window.addEventListener('DOMContentLoaded', () => {
     closeElem.addEventListener('click', () => {
         menu.classList.remove('active');
     })
+
+    asphalting.addEventListener('mouseover', () => {
+        menuSecond.classList.add('active');
+    })
+
+    closeElemSecond.addEventListener('click', () => {
+        menuSecond.classList.remove('active');
+    })
     
     // Calculating
-    
-    
+     
     function calc() {
     
         let small = document.querySelector('#small'),
