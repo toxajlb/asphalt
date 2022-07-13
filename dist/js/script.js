@@ -138,9 +138,22 @@ window.addEventListener('DOMContentLoaded', () => {
           menuSecond = document.querySelector('.menu-second'),
           closeElem = document.querySelector('.menu__close'),
           closeElemSecond = document.querySelector('.menu-second__close'),
-          sublist = document.querySelector('.menu-second__sublist'),
+          sublistFirst = document.querySelector('#sublist-first'),
+          sublistSecond = document.querySelector('#sublist-second'),
+          sublistThird = document.querySelector('#sublist-third'),
+          sublistFourth = document.querySelector('#sublist-fourth'),
+          sublistFifth = document.querySelector('#sublist-fifth'),
           asphalting = document.querySelector('#asphalting'),
-          secondAsphalting = document.querySelector('#secondAsphalting');
+          linkFirst = document.querySelector('#link-first'),
+          linkSecond = document.querySelector('#link-second'),
+          linkThird = document.querySelector('#link-third'),
+          linkFourth = document.querySelector('#link-fourth'),
+          linkFifth= document.querySelector('#link-fifth'),
+          closeFirst = document.querySelector('#close-first'),
+          closeSecond = document.querySelector('#close-second'),
+          closeThird = document.querySelector('#close-third'),
+          closeFourth = document.querySelector('#close-fourth'),
+          closeFifth = document.querySelector('#close-fifth');
 
     hamburger.addEventListener('click', () => {
         menu.classList.add('active');
@@ -158,13 +171,91 @@ window.addEventListener('DOMContentLoaded', () => {
         menuSecond.classList.remove('active');
     })
 
-    secondAsphalting.addEventListener('mouseover', () => {
-        sublist.style.display = 'block';
+
+
+    linkFirst.addEventListener('mousedown', () => {
+        sublistFirst.style.display = 'block';
     })
 
-    menuSecond.addEventListener('mouseout', (e) => {
-        sublist.style.display = 'none';
+    sublistFirst.addEventListener('mouseover', (e) => {
+        e.currentTarget.style.display = 'block';
+    }) 
+
+    sublistFirst.addEventListener('mouseout', (e) => {
+        e.currentTarget.style.display = 'none';
+    }) 
+
+    closeFirst.addEventListener('click', () => {
+        sublistFirst.style.display = 'none';
+    }) 
+
+
+    linkSecond.addEventListener('mousedown', () => {
+        sublistSecond.style.display = 'block';
     })
+
+    sublistSecond.addEventListener('mouseover', (e) => {
+        e.currentTarget.style.display = 'block';
+    }) 
+
+    sublistSecond.addEventListener('mouseout', (e) => {
+        e.currentTarget.style.display = 'none';
+    }) 
+
+    closeSecond.addEventListener('click', () => {
+        sublistSecond.style.display = 'none';
+    })
+
+
+    linkThird.addEventListener('mousedown', () => {
+        sublistThird.style.display = 'block';
+    })
+
+    sublistThird.addEventListener('mouseover', (e) => {
+        e.currentTarget.style.display = 'block';
+    }) 
+
+    sublistThird.addEventListener('mouseout', (e) => {
+        e.currentTarget.style.display = 'none';
+    }) 
+
+    closeThird.addEventListener('click', () => {
+        sublistThird.style.display = 'none';
+    }) 
+
+
+    linkFourth.addEventListener('mousedown', () => {
+        sublistFourth.style.display = 'block';
+    })
+
+    sublistFourth.addEventListener('mouseover', (e) => {
+        e.currentTarget.style.display = 'block';
+    }) 
+
+    sublistFourth.addEventListener('mouseout', (e) => {
+        e.currentTarget.style.display = 'none';
+    }) 
+
+    closeFourth.addEventListener('click', () => {
+        sublistFourth.style.display = 'none';
+    }) 
+
+
+    linkFifth.addEventListener('mousedown', () => {
+        sublistFifth.style.display = 'block';
+    })
+
+    sublistFifth.addEventListener('mouseover', (e) => {
+        e.currentTarget.style.display = 'block';
+    }) 
+
+    sublistFifth.addEventListener('mouseout', (e) => {
+        e.currentTarget.style.display = 'none';
+    }) 
+
+    closeFifth.addEventListener('click', () => {
+        sublistFifth.style.display = 'none';
+    }) 
     
     // Calculating
      

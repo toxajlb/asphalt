@@ -40,15 +40,15 @@
     }
     &__link, &__sublink {
         position: relative;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-weight: bold;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 21px;
         &:before {
             content: '';
             position: absolute;
             left: -35px;
-            top: 5px;
+            top: 3px;
             width: 15px;
             height: 15px;
             border-radius: 100%;
@@ -66,7 +66,7 @@
     }
     &__social {
         position: absolute;
-        bottom: 50px;
+        bottom: 16px;
         width: 90px;
         left: 50%;
         transform: translateX(-50%);
