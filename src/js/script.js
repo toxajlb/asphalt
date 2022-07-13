@@ -131,7 +131,7 @@ $(document).ready(function(){
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    // Hamburger
+    // Menu
 
     const hamburger = document.querySelector('.hamburger'),
           menu = document.querySelector('.menu'),
@@ -171,8 +171,6 @@ window.addEventListener('DOMContentLoaded', () => {
         menuSecond.classList.remove('active');
     })
 
-
-
     linkFirst.addEventListener('mousedown', () => {
         sublistFirst.style.display = 'block';
     })
@@ -188,7 +186,6 @@ window.addEventListener('DOMContentLoaded', () => {
     closeFirst.addEventListener('click', () => {
         sublistFirst.style.display = 'none';
     }) 
-
 
     linkSecond.addEventListener('mousedown', () => {
         sublistSecond.style.display = 'block';
@@ -206,7 +203,6 @@ window.addEventListener('DOMContentLoaded', () => {
         sublistSecond.style.display = 'none';
     })
 
-
     linkThird.addEventListener('mousedown', () => {
         sublistThird.style.display = 'block';
     })
@@ -223,7 +219,6 @@ window.addEventListener('DOMContentLoaded', () => {
         sublistThird.style.display = 'none';
     }) 
 
-
     linkFourth.addEventListener('mousedown', () => {
         sublistFourth.style.display = 'block';
     })
@@ -239,7 +234,6 @@ window.addEventListener('DOMContentLoaded', () => {
     closeFourth.addEventListener('click', () => {
         sublistFourth.style.display = 'none';
     }) 
-
 
     linkFifth.addEventListener('mousedown', () => {
         sublistFifth.style.display = 'block';
