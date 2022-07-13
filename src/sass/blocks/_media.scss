@@ -47,6 +47,11 @@
             font-size: 14px;
         }
     }  
+    .title {  
+        &_left {
+            font-size: 30px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -94,6 +99,11 @@
     }
     .modal {
         left: 40%;
+    }
+    .title {  
+        &_left {
+            font-size: 25px;
+        }
     }
 }
 
@@ -241,5 +251,18 @@
             margin: 0 10px 20px 10px;
             font-size: 12px;
         }
-    }  
+    } 
+    .feed-form {
+        width: 100%;
+    } 
+    .title {  
+        &_left {
+            font-size: 13px;
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 14px;
+        }
+    }
 }
