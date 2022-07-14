@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    // Carousel
+
     $('.carousel__inner').slick({
         speed: 1200,
         adaptiveHeight: true,
