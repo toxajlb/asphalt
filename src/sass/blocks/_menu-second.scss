@@ -16,12 +16,19 @@
     &__block {
         position: relative;
         width: 345px;
+        height: 100vh;
         z-index: 10;
         padding-top: 70px;
         padding-left: 40px;
-        padding-bottom: 100vh;
         transition: all .6s;
         background-color: rgba(97, 46, 3, 1);
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    &__block::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
     &__close {
         position: absolute;

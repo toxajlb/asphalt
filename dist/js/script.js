@@ -171,85 +171,29 @@ window.addEventListener('DOMContentLoaded', () => {
         menuSecond.classList.remove('active');
     })
 
-    linkFirst.addEventListener('mousedown', () => {
-        sublistFirst.style.display = 'block';
-    })
+    function menuCall(item, secondItem, thirdItem) {
+        item.addEventListener('mousedown', () => {
+            secondItem.style.display = 'block';
+        })
+    
+        secondItem.addEventListener('mouseover', (e) => {
+            e.currentTarget.style.display = 'block';
+        }) 
+    
+        secondItem.addEventListener('mouseout', (e) => {
+            e.currentTarget.style.display = 'none';
+        }) 
+    
+        thirdItem.addEventListener('click', () => {
+            secondItem.style.display = 'none';
+        }) 
+    }
 
-    sublistFirst.addEventListener('mouseover', (e) => {
-        e.currentTarget.style.display = 'block';
-    }) 
-
-    sublistFirst.addEventListener('mouseout', (e) => {
-        e.currentTarget.style.display = 'none';
-    }) 
-
-    closeFirst.addEventListener('click', () => {
-        sublistFirst.style.display = 'none';
-    }) 
-
-    linkSecond.addEventListener('mousedown', () => {
-        sublistSecond.style.display = 'block';
-    })
-
-    sublistSecond.addEventListener('mouseover', (e) => {
-        e.currentTarget.style.display = 'block';
-    }) 
-
-    sublistSecond.addEventListener('mouseout', (e) => {
-        e.currentTarget.style.display = 'none';
-    }) 
-
-    closeSecond.addEventListener('click', () => {
-        sublistSecond.style.display = 'none';
-    })
-
-    linkThird.addEventListener('mousedown', () => {
-        sublistThird.style.display = 'block';
-    })
-
-    sublistThird.addEventListener('mouseover', (e) => {
-        e.currentTarget.style.display = 'block';
-    }) 
-
-    sublistThird.addEventListener('mouseout', (e) => {
-        e.currentTarget.style.display = 'none';
-    }) 
-
-    closeThird.addEventListener('click', () => {
-        sublistThird.style.display = 'none';
-    }) 
-
-    linkFourth.addEventListener('mousedown', () => {
-        sublistFourth.style.display = 'block';
-    })
-
-    sublistFourth.addEventListener('mouseover', (e) => {
-        e.currentTarget.style.display = 'block';
-    }) 
-
-    sublistFourth.addEventListener('mouseout', (e) => {
-        e.currentTarget.style.display = 'none';
-    }) 
-
-    closeFourth.addEventListener('click', () => {
-        sublistFourth.style.display = 'none';
-    }) 
-
-    linkFifth.addEventListener('mousedown', () => {
-        sublistFifth.style.display = 'block';
-    })
-
-    sublistFifth.addEventListener('mouseover', (e) => {
-        e.currentTarget.style.display = 'block';
-    }) 
-
-    sublistFifth.addEventListener('mouseout', (e) => {
-        e.currentTarget.style.display = 'none';
-    }) 
-
-    closeFifth.addEventListener('click', () => {
-        sublistFifth.style.display = 'none';
-    }) 
+    menuCall(linkFirst, sublistFirst, closeFirst);
+    menuCall(linkSecond, sublistSecond, closeSecond);
+    menuCall(linkThird, sublistThird, closeThird);
+    menuCall(linkFourth, sublistFourth, closeFourth);
+    menuCall(linkFifth, sublistFifth, closeFifth);
     
     // Calculating
      
