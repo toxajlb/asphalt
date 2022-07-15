@@ -14,7 +14,8 @@
 }
 .divider {
     height: 3px;
-    background-color: $main-color;
+    background-color: lightgray;
+    box-shadow: 0px 5px 5px 5px lightgray;
 }
 @import 'blocks/promo';
 @import 'blocks/header';

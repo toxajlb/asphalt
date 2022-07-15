@@ -151,19 +151,24 @@
         position: fixed;
     }
     .header {
+        flex-direction: column;
         &__official {
-            margin-right: 15px;
             a {
-                font-size: 12px;
+                font-size: 14px;
             }
             span {
-                font-size: 10px;
+                font-size: 12px;
                 line-height: inherit;
             }
         }
         &__contacts {
+            margin-top: 10px;
             a {
-                font-size: 10px;
+                font-size: 16px;
+                color: $main-color;
+                &:hover {
+                    color: $main-color;
+                }
             }
         }       
     }
@@ -191,16 +196,13 @@
         }
     }
     .button {
-        width: 100px;
-        font-size: 10px; 
-        &:hover {
-            background-color: $main-color;
-        }
-        &_main {
-            display: none;
-        }
+        display: none;
         &_submit {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
             background-color: $main-color;
+            font-size: 14px;
         }
     }
     .menu {
