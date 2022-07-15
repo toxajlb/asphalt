@@ -13,9 +13,8 @@
     margin: 21px auto 0 auto;
 }
 .divider {
-    height: 3px;
-    background-color: lightgray;
-    box-shadow: 0px 5px 5px 5px lightgray;
+    border: 1px solid lightgray;
+    box-shadow: 0px 10px 30px 10px lightgray;
 }
 @import 'blocks/promo';
 @import 'blocks/header';

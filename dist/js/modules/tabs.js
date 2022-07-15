@@ -14,6 +14,9 @@ function tabs() {
             })
         });
     };
+
+    toggleSlide('.catalog-item__link');
+    toggleSlide('.catalog-item__back');
 }
 
 export default tabs;
