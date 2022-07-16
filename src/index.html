@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Asphalt</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,8 +19,8 @@
             <nav>
                 <ul class="menu__list">
                     <li class="menu__link"><a rel="author" href="#" title="О компании">О компании</a></li>
-                    <li class="menu__link"><a rel="next" href="#" id="asphalting">Асфальтирование</a></li>
-                    <li class="menu__link"><a href="#prices" title="Цены" id="prices">Цены</a></li>
+                    <li class="menu__link"><a rel="next" href="#" id="asphalting" title="Услуги">Услуги</a></li>
+                    <li class="menu__link"><a href="#" id="prices" title="Цены">Цены</a></li>
                     <li class="menu__link"><a href="#completed" title="Наши работы">Наши работы</a></li>
                     <li class="menu__link"><a href="#calc" title="Калькулятор">Калькулятор</a></li>
                     <li class="menu__link"><a href="#" title="Контакты">Контакты</a></li>
@@ -39,47 +39,94 @@
             </div>
             <nav>
                 <ul class="menu-second__list">
-                    <li class="menu-second__link"><a href="#" rel="help" title="Асфальтирование">Асфальтирование</a>
-                        <ul class="menu-second__sublist" id="sublist-first">
+                    <li class="menu-second__link"><a href="#" title="Асфальтирование">Асфальтирование</a>
+                        <ul class="menu-second__sublist">
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Асфальтирование дорог">Асфальтирование дорог</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Асфальтирование территорий">Асфальтирование территорий</a></li>
                             <li class="menu-second__sublink"><a href="#completed" rel="help" title="Асфальтирование дворов">Асфальтирование дворов</a></li>
                             <li class="menu-second__sublink"><a href="#prices" rel="help" title="Асфальтирование площадок">Асфальтирование площадок</a></li>
                             <li class="menu-second__sublink"><a href="#calc" rel="help" title="Асфальтирование тротуаров">Асфальтирование тротуаров</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Асфальтирование парковок">Асфальтирование парковок</a></li>
-                            <li class="menu-second__sublink" id="close-first"><a href="#" title="Назад">Назад</a></li>
                         </ul>
-                        <div class="menu-second__pointer" id="link-first"></div>
+                        <div class="menu-second__pointer"></div>
                     </li>
-                    <li class="menu-second__link"><a href="#" rel="help" title="Строительство и ремонт дорог">Строительство и ремонт дорог</a>
-                        <ul class="menu-second__sublist" id="sublist-second">
+                    <li class="menu-second__link"><a href="#" title="Строительство и ремонт дорог">Строительство и ремонт дорог</a>
+                        <ul class="menu-second__sublist">
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Строительство дорог">Строительство дорог</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Ремонт дорог">Ремонт дорог</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Укладка асфальта">Укладка асфальта</a></li>
-                            <li class="menu-second__sublink" id="close-second"><a href="#" title="Назад">Назад</a></li>
                         </ul>
-                        <div class="menu-second__pointer" id="link-second"></div>
+                        <div class="menu-second__pointer"></div>
                     </li>
-                    <li class="menu-second__link"><a href="#" rel="help" title="Благоустройство территорий">Благоустройство территорий</a>
-                        <ul class="menu-second__sublist" id="sublist-third">
+                    <li class="menu-second__link"><a href="#" title="Благоустройство территорий">Благоустройство территорий</a>
+                        <ul class="menu-second__sublist">
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Посадка саженцев">Посадка саженцев</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Укладка газонов">Укладка газонов</a></li>
-                            <li class="menu-second__sublink" id="close-third"><a href="#" title="Назад">Назад</a></li>
                         </ul>
-                        <div class="menu-second__pointer" id="link-third"></div>
+                        <div class="menu-second__pointer"></div>
                     </li>
-                    <li class="menu-second__link"><a href="#" rel="help" title="Укладка брусчатки и установка бордюров">Укладка брусчатки и установка бордюров</a>
-                        <ul class="menu-second__sublist" id="sublist-fourth">
+                    <li class="menu-second__link"><a href="#" title="Укладка брусчатки и установка бордюров">Укладка брусчатки и установка бордюров</a>
+                        <ul class="menu-second__sublist">
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Укладка тротуарной плитки">Укладка тротуарной плитки</a></li>
                             <li class="menu-second__sublink"><a href="#" rel="help" title="Установка бордюров">Установка бордюров</a></li>
-                            <li class="menu-second__sublink" id="close-fourth"><a href="#" title="Назад">Назад</a></li>
                         </ul>
-                        <div class="menu-second__pointer" id="link-fourth"></div>
+                        <div class="menu-second__pointer"></div>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="menu-second__overlay"></div>
+    </div>
+
+    <div class="menu-price">
+        <div class="menu-price__block">
+            <div class="menu-price__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z" fill="black"/>
+                </svg>
+            </div>
+            <nav>
+                <ul class="menu-price__list">
+                    <li class="menu-price__link"><a href="#" rel="help" title="Асфальтирование цена">Асфальтирование цена</a>
+                        <ul class="menu-price__sublist">
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Асфальтирование дорог цена">Асфальтирование дорог цена</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Асфальтирование территорий цена">Асфальтирование территорий цена</a></li>
+                            <li class="menu-price__sublink"><a href="#completed" rel="help" title="Асфальтирование дворов цена">Асфальтирование дворов цена</a></li>
+                            <li class="menu-price__sublink"><a href="#prices" rel="help" title="Асфальтирование площадок цена">Асфальтирование площадок цена</a></li>
+                            <li class="menu-price__sublink"><a href="#calc" rel="help" title="Асфальтирование тротуаров цена">Асфальтирование тротуаров цена</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Асфальтирование парковок цена">Асфальтирование парковок цена</a></li>
+                        </ul>
+                        <div class="menu-price__pointer"></div>
+                    </li>
+                    <li class="menu-price__link"><a href="#" rel="help" title="Строительство и ремонт дорог">Строительство и ремонт дорог</a>
+                        <ul class="menu-price__sublist" id="sublist-second">
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Строительство дорог">Строительство дорог</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Ремонт дорог">Ремонт дорог</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Укладка асфальта">Укладка асфальта</a></li>
+                            <li class="menu-price__sublink" id="close-second"><a href="#" title="Назад">Назад</a></li>
+                        </ul>
+                        <div class="menu-price__pointer" id="link-second"></div>
+                    </li>
+                    <li class="menu-price__link"><a href="#" rel="help" title="Благоустройство территорий">Благоустройство территорий</a>
+                        <ul class="menu-price__sublist" id="sublist-third">
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Посадка саженцев">Посадка саженцев</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Укладка газонов">Укладка газонов</a></li>
+                            <li class="menu-price__sublink" id="close-third"><a href="#" title="Назад">Назад</a></li>
+                        </ul>
+                        <div class="menu-price__pointer" id="link-third"></div>
+                    </li>
+                    <li class="menu-price__link"><a href="#" rel="help" title="Укладка брусчатки и установка бордюров">Укладка брусчатки и установка бордюров</a>
+                        <ul class="menu-price__sublist" id="sublist-fourth">
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Укладка тротуарной плитки">Укладка тротуарной плитки</a></li>
+                            <li class="menu-price__sublink"><a href="#" rel="help" title="Установка бордюров">Установка бордюров</a></li>
+                            <li class="menu-price__sublink" id="close-fourth"><a href="#" title="Назад">Назад</a></li>
+                        </ul>
+                        <div class="menu-price__pointer" id="link-fourth"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-price__overlay"></div>
     </div>
 
     <section id="up" class="promo">  
