@@ -19,7 +19,7 @@ function calc() {
       crushedStone = document.querySelector('#crushed-stone'),
       sand = document.querySelector('#sand'),
       square = document.querySelector('#square'),
-      btn = document.querySelector('#btn'),
+      btn = document.querySelector('.button_calc'),
       result = document.querySelector('#out'),
       oneSquarePerSmall = 108,
       oneSquarePerMiddle = 110,

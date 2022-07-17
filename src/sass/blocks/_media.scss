@@ -204,6 +204,9 @@
             background-color: $main-color;
             font-size: 14px;
         }
+        &_calc {
+            display: block;
+        }
     }
     .menu {
         &__block {
