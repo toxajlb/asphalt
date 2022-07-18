@@ -1,5 +1,10 @@
 .promo {
+
     min-height: 100vh;
+    position: relative;
+ 
+
+    /* min-height: 100vh;
     position: relative;
     padding: 21px 0 93px 0;
     background: url("../img/main.jpg") no-repeat 50%/cover;
@@ -10,14 +15,14 @@
         margin-top: 200px;
     }
     &__header {
-        color: #ffffff;
+        color: #fff;
         font-size: 42px;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 42px;
     }
     span {
-        color: #ffffff;
+        color: #fff;
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
@@ -25,7 +30,7 @@
     }
     &__subheader {
         margin-top: 17px;
-        color: #ffffff;
+        color: #fff;
         font-size: 32px;
         line-height: 24px;
         font-weight: 500;
@@ -41,7 +46,7 @@
     &__icon {
         width: 108px;
         text-align: center;
-        color: #ffffff;
+        color: #fff;
         font-size: 14px;
         font-weight: 500;
         img {
@@ -51,14 +56,9 @@
         }
     }
     &__link {
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
         font-weight: 500;
         margin-top: 18px;
-        a {
-            color: #ffffff;
-            text-transform: uppercase;
-            text-decoration: underline;
-        }
-    }
+    } */
 }

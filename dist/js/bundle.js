@@ -76,7 +76,7 @@ function calc() {
     if (small.value != '' && middle.value != '' && large.value != '' && crushedStone.value != '' && sand.value != '' && square.value != '') {
       let sum = small * totalSquareSmall + middle * totalSquareMiddle + large * totalSquareLarge + crushedStone * totalSquareCrushedStone + sand * totalSquareSand;
       result.textContent = `${sum} ₽`;
-    } else alert('Введите числовые данные');
+    } else alert('Пожалуйста, заполните все поля данными либо 0');
   });
 }
 
@@ -254,6 +254,32 @@ function modal() {
 
 /***/ }),
 
+/***/ "./src/js/modules/promoSlider.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/promoSlider.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function promoSlider() {
+  $('.promo__slider').slick({
+    speed: 1200,
+    adaptiveHeight: true,
+    arrows: false,
+    fade: true,
+    cssEasy: 'linear' //autoplay: true,
+    //autoplaySpeed: 1200,
+
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (promoSlider);
+
+/***/ }),
+
 /***/ "./src/js/modules/smoothScroll.js":
 /*!****************************************!*\
   !*** ./src/js/modules/smoothScroll.js ***!
@@ -386,10 +412,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/carousel */ "./src/js/modules/carousel.js");
 /* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ "./src/js/modules/modal.js");
-/* harmony import */ var _modules_smoothScroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/smoothScroll */ "./src/js/modules/smoothScroll.js");
-/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
-/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_promoSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/promoSlider */ "./src/js/modules/promoSlider.js");
+/* harmony import */ var _modules_smoothScroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/smoothScroll */ "./src/js/modules/smoothScroll.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+
 
 
 
@@ -401,10 +429,11 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('DOMContentLoaded', () => {
   (0,_modules_carousel__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  (0,_modules_smoothScroll__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  (0,_modules_menu__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  (0,_modules_calc__WEBPACK_IMPORTED_MODULE_4__["default"])();
-  (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  (0,_modules_promoSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  (0,_modules_smoothScroll__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_modules_menu__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  (0,_modules_calc__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_6__["default"])();
 });
 })();
 

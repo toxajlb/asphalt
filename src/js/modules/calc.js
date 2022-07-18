@@ -66,7 +66,7 @@ function calc() {
             (crushedStone * totalSquareCrushedStone) + (sand * totalSquareSand);
             result.textContent = `${sum} ₽`;      
         }   
-        else alert('Введите числовые данные');       
+        else alert('Пожалуйста, заполните все поля данными либо 0');       
     });
 }
 
