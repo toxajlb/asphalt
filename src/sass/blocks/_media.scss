@@ -11,7 +11,7 @@
     .hamburger {
         position: fixed;
     }
-    .header {
+    .header-main {
         &__official {
             span {
                 font-size: 16px;
@@ -19,6 +19,9 @@
         }            
     }
     .promo {
+        &__wrapper {
+            top: 210px;
+        }
         &__header {
             font-size: 37px;
         }
@@ -75,10 +78,11 @@
     .hamburger {
         position: fixed;
     }
-    .header {
+    .header-main {
+        align-items: center;
         &__official {
             a {
-                font-size: 16px;
+                font-size: 15px;
             }
             span {
                 font-size: 14px;
@@ -92,6 +96,9 @@
         }       
     }
     .promo {
+        &__wrapper {
+            margin-top: -40px;
+        }
         &__header {
             font-size: 24px;
             line-height: 5px;
@@ -151,36 +158,39 @@
         position: fixed;
     }
     .header {
+        top: 18px;
+    }
+    .header-main {
         flex-direction: column;
         &__official {
             a {
-                font-size: 14px;
+                font-size: 10px;
             }
             span {
-                font-size: 12px;
+                font-size: 11px;
                 line-height: inherit;
             }
         }
         &__contacts {
-            margin-top: 10px;
+            margin-top: 7px;
             a {
-                font-size: 16px;
-                color: $main-color;
+                font-size: 14px;
+                color: darkorange;
                 &:hover {
-                    color: $main-color;
+                    color: darkorange;
                 }
             }
         }       
     }
     .promo {
         &__wrapper {
-            margin-top: 80px;
+            margin-top: -110px;
         }
         &__header {
-            font-size: 18px;
+            font-size: 14px;
         }
         span {
-            font-size: 12px;
+            font-size: 9px;
         }
         &__subheader {
             margin: 0 auto;
@@ -191,8 +201,17 @@
             display: none;
         }
         &__icons {
-            margin-top: 50px;
+            margin-top: 0;
             width: 100%;
+            justify-content: space-evenly;
+        }
+        &__icon {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            img {
+                margin-bottom: 0;
+            }
         }
     }
     .button {
@@ -200,7 +219,7 @@
         &_submit {
             display: block;
             margin: 0 auto;
-            width: 50%;
+            width: 100%;
             background-color: $main-color;
             font-size: 14px;
         }

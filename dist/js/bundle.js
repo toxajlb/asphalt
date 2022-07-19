@@ -102,8 +102,6 @@ function carousel() {
     nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
     fade: true,
     cssEasy: 'linear',
-    //autoplay: true,
-    //autoplaySpeed: 1200,
     responsive: [{
       breakpoint: 992,
       settings: {
@@ -266,12 +264,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function promoSlider() {
   $('.promo__slider').slick({
-    speed: 1200,
     adaptiveHeight: true,
     arrows: false,
     fade: true,
-    cssEasy: 'linear' //autoplay: true,
-    //autoplaySpeed: 1200,
+    speed: 3000,
+    cssEasy: 'linear'
+    /* autoplay: true,
+    autoplaySpeed: 5200, */
 
   });
 }
