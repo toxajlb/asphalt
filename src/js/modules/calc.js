@@ -8,9 +8,9 @@ function calc() {
         square = document.querySelector('#square'),
         btn = document.querySelector('.button_calc'),
         result = document.querySelector('#out'),
-        oneSquarePerSmall = 108,
-        oneSquarePerMiddle = 110,
-        oneSquarePerLarge = 112,
+        oneSquarePerSmall = 110,
+        oneSquarePerMiddle = 112,
+        oneSquarePerLarge = 114,
         oneSquarePerSand = 7,
         oneSquarePerCrushedStone = 10;
 
@@ -62,7 +62,7 @@ function calc() {
 
         if (small.value != '' && middle.value != '' && large.value != '' && crushedStone.value != '' && 
         sand.value != '' && square.value != '') {
-            let sum = (small * totalSquareSmall) + (middle * totalSquareMiddle) + (large * totalSquareLarge) + 
+            let sum = (small * totalSquareSmall * 25) + (middle * totalSquareMiddle * 25) + (large * totalSquareLarge * 25) + 
             (crushedStone * totalSquareCrushedStone) + (sand * totalSquareSand);
             result.textContent = `${sum} ₽`;      
         }   

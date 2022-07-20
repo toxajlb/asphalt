@@ -1,0 +1,31 @@
+.to-main {
+    position: fixed;
+    top: 8px;
+    right: 20px;
+    opacity: 0.8;
+    z-index: 1;
+    img {
+        width: 40px;
+    }
+}
+.photos {
+    background: radial-gradient(#eee, $main-color);
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(6, auto) / repeat(4, auto);
+        grid-auto-rows: auto;
+        gap: 5px;
+    }
+    &__item {
+        transition: all 0.6s;
+        margin-bottom: 5px;
+        img {
+            width: 100%;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

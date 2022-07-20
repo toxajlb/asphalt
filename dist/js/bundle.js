@@ -21,9 +21,9 @@ function calc() {
       square = document.querySelector('#square'),
       btn = document.querySelector('.button_calc'),
       result = document.querySelector('#out'),
-      oneSquarePerSmall = 108,
-      oneSquarePerMiddle = 110,
-      oneSquarePerLarge = 112,
+      oneSquarePerSmall = 110,
+      oneSquarePerMiddle = 112,
+      oneSquarePerLarge = 114,
       oneSquarePerSand = 7,
       oneSquarePerCrushedStone = 10;
 
@@ -74,7 +74,7 @@ function calc() {
         totalSquareCrushedStone = square * oneSquarePerCrushedStone;
 
     if (small.value != '' && middle.value != '' && large.value != '' && crushedStone.value != '' && sand.value != '' && square.value != '') {
-      let sum = small * totalSquareSmall + middle * totalSquareMiddle + large * totalSquareLarge + crushedStone * totalSquareCrushedStone + sand * totalSquareSand;
+      let sum = small * totalSquareSmall * 25 + middle * totalSquareMiddle * 25 + large * totalSquareLarge * 25 + crushedStone * totalSquareCrushedStone + sand * totalSquareSand;
       result.textContent = `${sum} ₽`;
     } else alert('Пожалуйста, заполните все поля данными либо 0');
   });
@@ -269,8 +269,9 @@ function promoSlider() {
     fade: true,
     speed: 3000,
     cssEasy: 'linear'
-    /* autoplay: true,
-    autoplaySpeed: 5200, */
+    /*         autoplay: true,
+            autoplaySpeed: 4500,
+            pauseOnFocus: false,  */
 
   });
 }
