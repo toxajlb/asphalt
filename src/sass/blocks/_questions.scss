@@ -3,6 +3,8 @@
     background: url("../img/feedback.png") no-repeat 50%/cover;
     &__item {
         display: flex;
+        flex-direction: column;
+        text-align: center;
         margin-top: 100px;
         &:nth-child(2){
             margin-top: 70px;
