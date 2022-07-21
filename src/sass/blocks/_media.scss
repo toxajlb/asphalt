@@ -380,16 +380,20 @@
             min-height: 300px;
         }
         &__addr {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 20px;
         }
         &__phone {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 14px;
-            margin-bottom: 48px;
         }
         iframe {
             display: none;
+        }
+        &__warning {
+            position: absolute;
+            top: 260px;
+            font-size: 9px;
         }
     }
 } 
