@@ -54,9 +54,23 @@
         height: 630px;
         border: none;
     }
-    &__warning {
-        color: #fff;
+    &__nav {
+        color: #000;
         background-color: gray;
+        nav {
+            display: flex;
+            justify-content: center;
+            ul {
+                list-style-type: none;
+            }
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &__warning { 
         font-size: 12px;
         text-align: center;
     }

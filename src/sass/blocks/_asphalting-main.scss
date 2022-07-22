@@ -16,6 +16,15 @@
         text-indent: 25px;
         font-size: 18px;
     }
+    ul {
+        list-style-type: square;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    a {
+        color: lightcoral;
+    }
     &__table {
         table {
             width: 100%;
@@ -63,7 +72,6 @@
             margin: 0 0 0 40px;
         }
         ul {
-            list-style-type: square;
             margin: 15px 0 0 20px;
         }
         li {
@@ -77,7 +85,6 @@
         } 
         li {
             position: relative;
-            margin-bottom: 10px;
         }
         li:before {
             content: '';

@@ -147,6 +147,14 @@
     .calculating-choose {
         align-items: end;
     }
+    .asphalting-main {
+        h2 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -300,6 +308,32 @@
     .title {
         font-size: 18px;
     } 
+    .asphalting-main {
+        p {
+            font-size: 14px;
+        }
+        &__table {
+            table {
+                thead th {
+                    font-size: 12px;
+                    padding: 0;
+                }
+                tbody td {
+                    padding: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+        &__steps {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__photo {
+            img {
+                height: 170px;
+            }
+        }
+    }
     .advantages {
         &__wrapper {
             width: 100%;
