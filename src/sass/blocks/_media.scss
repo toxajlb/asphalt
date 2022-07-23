@@ -427,9 +427,14 @@
         iframe {
             display: none;
         }
-        &__warning {
+        &__nav {
             position: absolute;
-            top: 260px;
+            top: 260px; 
+            nav {
+                flex-direction: column;
+            } 
+        }
+        &__warning {      
             font-size: 9px;
         }
     }
