@@ -5,9 +5,9 @@ function promoSlider() {
         fade: true,
         speed: 3000,
         cssEasy: 'linear',
-/*         autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4500,
-        pauseOnFocus: false,  */
+        pauseOnFocus: false,  
     });
 }
 
