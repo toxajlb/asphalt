@@ -102,12 +102,14 @@
         &__header {
             font-size: 24px;
             line-height: revert;
+            .header-main {
+                &__descr {
+                    font-size: 14px;
+                }
+            }
         }
         &__subheader {
             font-size: 18px;
-        }
-        span {
-            font-size: 14px;
         }
     }  
     .button {
@@ -197,9 +199,11 @@
         &__header {
             font-size: 14px;
             line-height: revert;
-        }
-        span {
-            font-size: 9px;
+            .header-main {
+                &__descr {
+                    font-size: 9px;
+                }
+            }
         }
         &__subheader {
             margin: 0 auto;
@@ -443,5 +447,19 @@
     }
     .photos {
         padding-top: 70px;
+    }
+    .about {
+        .breadcrumbs {
+            margin-top: -40px;
+        }
+        h1 {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
     }
 } 

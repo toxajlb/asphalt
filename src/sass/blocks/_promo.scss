@@ -34,13 +34,15 @@
         font-size: 50px;
         font-weight: 700;
         line-height: 42px;
-    }
-    span {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 42px;
+        .header-main {
+            &__descr {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                line-height: 42px;
+            }
+        }
     }
     &__subheader {
         margin-top: 17px;
