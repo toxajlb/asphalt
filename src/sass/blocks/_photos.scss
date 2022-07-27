@@ -11,6 +11,9 @@
 .photos {
     background: radial-gradient(#eee, $main-color);
     padding-top: 120px;
+    .title {
+        padding-top: 60px;
+    }
     &__wrapper {
         margin-top: 60px;
         display: grid;
