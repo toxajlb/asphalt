@@ -32,10 +32,15 @@
     <div class="container">
         
         <div class="privacy">
-            <div class="breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-                <ul>
-                    <li class="crumbs1" typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://asfaltirovanie-moskva.ru" title="Главная">Главная</a></li>
-                    <li class="crumbs3" typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://asfaltirovanie-moskva.ru/privacy" title="Политика конфиденциальности">Политика конфиденциальности</a></li>
+            <div class="breadcrumbs">
+                <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                    <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://asfaltirovanie-moskva.ru" title="Асфальтирование"><span property="name">Асфальтирование</span>
+                    <meta property="position" content="1">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        <span property="name">Политика конфиденциальности</span>
+                        <meta property="position" content="2">
+                    </li>
                 </ul>
             </div>
             <div class="privacy__describe">
