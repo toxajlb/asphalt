@@ -124,10 +124,15 @@
             </div>  
         </header>            
         <div class="container">
-            <div class="breadcrumbs" prefix="v: http://rdf.data-vocabulary.org/#">
-                <ul>
-                    <li class="crumbs1" typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://asfaltirovanie-moskva.ru" title="Главная">Главная</a></li>
-                    <li class="crumbs3" typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href="https://asfaltirovanie-moskva.ru/about" title="О компании">О компании</a></li>
+            <div class="breadcrumbs">
+                <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                    <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="https://asfaltirovanie-moskva.ru" title="Асфальтирование"><span property="name">Асфальтирование</span>
+                    <meta property="position" content="1">
+                    </li>
+                    <li property="itemListElement" typeof="ListItem">
+                        <span property="name">О компании</span>
+                        <meta property="position" content="2">
+                    </li>
                 </ul>
             </div>
             <h1>О дорожно-строительной компании ООО «Асфальтирование под ключ»</h1>
@@ -211,7 +216,7 @@
         <div class="footer__nav">
             <nav>
                 <ul>Компания
-                    <li><a href="about.html" title="О компании">О компании</a></li>
+                    <li><a href="#" title="О компании">О компании</a></li>
                     <li><a href="photos.html" title="Наши работы">Наши работы</a></li>
                     <li><a href="/#calc" title="Калькулятор">Калькулятор</a></li>
                     <li><a href="/#last" title="Контакты">Контакты</a></li>
