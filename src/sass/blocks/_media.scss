@@ -2,6 +2,13 @@
     .container {
         max-width: 960px;
     }
+    .promo {
+        &__slider {
+            img {
+                height: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -27,6 +34,11 @@
         }
         &__subheader {
             font-size: 24px;
+        }
+        &__slider {
+            img {
+                height: 100%;
+            }
         }
     }
     .button {
@@ -110,6 +122,11 @@
         }
         &__subheader {
             font-size: 18px;
+        }
+        &__slider {
+            img {
+                height: 100%;
+            }
         }
     }  
     .button {
@@ -224,6 +241,11 @@
             font-size: 10px;
             img {
                 margin-bottom: 0;
+            }
+        }
+        &__slider {
+            img {
+                height: 100%;
             }
         }
     }
