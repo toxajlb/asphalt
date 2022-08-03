@@ -470,19 +470,25 @@
     .photos {
         padding-top: 70px;
     }
-    .about, .asphalting-allover, .parking-price {
+    .about, .asphalting-allover {
         .breadcrumbs {
             margin-top: -10px;
             font-size: 10px;
         }
         h1 {
-            font-size: 14px;
+            font-size: 16px;
         }
         h2 {
+            font-size: 14px;
+        }
+        h3 {
             font-size: 12px;
         }
         p {
-            font-size: 10px;
+            font-size: 12px;
+        }
+        ul {
+            font-size: 12px;
         }
     }
 } 

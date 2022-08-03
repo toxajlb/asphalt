@@ -24,8 +24,8 @@ function calc() {
       oneSquarePerSmall = 110,
       oneSquarePerMiddle = 112,
       oneSquarePerLarge = 114,
-      oneSquarePerSand = 7,
-      oneSquarePerCrushedStone = 10;
+      oneSquarePerSand = 13,
+      oneSquarePerCrushedStone = 19;
 
   function getDynamicInformation(selector) {
     const input = document.querySelector(selector);
