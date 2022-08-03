@@ -23,10 +23,14 @@
         text-indent: 25px;
         font-size: 18px;
     }
+    ul {
+        font-size: 18px;
+    }
     &__reasons {
         ul {
             position: relative;
             list-style-type: none;
+            font-size: 18px;
         } 
         li {
             position: relative;
@@ -53,9 +57,10 @@
         }
         ul {
             margin: 15px 0 0 20px;
+            font-size: 18px;
         }
         li {
             margin-bottom: 15px;
-        }    
+        }  
     }
 }
